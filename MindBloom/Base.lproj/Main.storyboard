@@ -7,187 +7,147 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KOTRAHOPE.otf">
+            <string>KOTRAHOPE</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--일기-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DiaryController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUD-D8-60C">
-                                <rect key="frame" x="10" y="59" width="373" height="710"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-su-Ued">
+                                <rect key="frame" x="10" y="109" width="373" height="639.33333333333337"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-su-Ued">
-                                        <rect key="frame" x="0.0" y="20" width="373" height="639.33333333333337"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-iv-4uv">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="48"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="만나서">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="41" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="41" name="KOTRAHOPE"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="반가워요">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="41" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" :)">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="41" name="KOTRAHOPE"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-9D-g3s">
-                                                <rect key="frame" x="0.0" y="78" width="373" height="25.666666666666671"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="날짜를">
-                                                        <attributes>
-                                                            <font key="NSFont" size="22" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <font key="NSFont" size="22" name="KOTRAHOPE"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="선택해주세요">
-                                                        <attributes>
-                                                            <font key="NSFont" size="22" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="!">
-                                                        <attributes>
-                                                            <font key="NSFont" size="22" name="KOTRAHOPE"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Gob-mi-gap">
-                                                <rect key="frame" x="0.0" y="133.66666666666663" width="373" height="370"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="370" id="BOR-QX-6yT"/>
-                                                </constraints>
-                                            </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-o9-saf">
-                                                <rect key="frame" x="0.0" y="533.66666666666663" width="373" height="25.666666666666629"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="어떤 일기를 쓰시겠어요?">
-                                                        <attributes>
-                                                            <font key="NSFont" size="22" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" size="24" name="KOTRAHOPE"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="48O-61-7f5">
-                                                <rect key="frame" x="0.0" y="589.33333333333337" width="373" height="50"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-xC-xyT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="LvZ-ki-Qbp"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="마음 일기">
-                                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
-                                                            <color key="baseBackgroundColor" red="1" green="0.75294117650000003" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="5yb-K2-335" kind="show" identifier="mind1" id="2bz-9I-a9Y"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuq-OG-wMH">
-                                                        <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="3Sj-1J-MH5"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="감사 일기">
-                                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
-                                                            <color key="baseBackgroundColor" red="1" green="0.80784313730000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="u3i-rI-Iu0" kind="show" id="3X2-zU-Z5r"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만나서 반가워요 :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-iv-4uv">
+                                        <rect key="frame" x="60.666666666666686" y="0.0" width="252" height="48"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="41"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-9D-g3s">
+                                        <rect key="frame" x="110.66666666666669" y="78" width="152" height="25.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="날짜를">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="선택해주세요">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="!">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Gob-mi-gap">
+                                        <rect key="frame" x="0.0" y="133.66666666666663" width="373" height="370"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Gob-mi-gap" secondAttribute="trailing" id="iT7-Ib-xb9"/>
-                                            <constraint firstItem="Gob-mi-gap" firstAttribute="leading" secondItem="QgW-su-Ued" secondAttribute="leading" id="k92-Nu-bTE"/>
+                                            <constraint firstAttribute="height" constant="370" id="BOR-QX-6yT"/>
                                         </constraints>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-o9-saf">
+                                        <rect key="frame" x="103" y="533.66666666666663" width="167" height="25.666666666666629"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="어떤 일기를 쓰시겠어요?">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="24" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="48O-61-7f5">
+                                        <rect key="frame" x="81.000000000000014" y="589.33333333333337" width="211.33333333333337" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-xC-xyT">
+                                                <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LvZ-ki-Qbp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="마음 일기">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.75294117650000003" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="5yb-K2-335" kind="show" identifier="mind1" id="2bz-9I-a9Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuq-OG-wMH">
+                                                <rect key="frame" x="110.66666666666666" y="0.0" width="100.66666666666666" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3Sj-1J-MH5"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="감사 일기">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.80784313730000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="u3i-rI-Iu0" kind="show" id="3X2-zU-Z5r"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QgW-su-Ued" firstAttribute="bottom" secondItem="Ozp-Mm-1bS" secondAttribute="bottom" id="M8g-C8-MPp"/>
-                                    <constraint firstItem="Ozp-Mm-1bS" firstAttribute="leading" secondItem="QgW-su-Ued" secondAttribute="leading" id="Owi-ZI-E2Q"/>
-                                    <constraint firstItem="Ozp-Mm-1bS" firstAttribute="top" secondItem="QgW-su-Ued" secondAttribute="top" constant="-20" id="fEs-Km-wFf"/>
-                                    <constraint firstItem="QgW-su-Ued" firstAttribute="trailing" secondItem="Ozp-Mm-1bS" secondAttribute="trailing" id="g7s-wh-0XC"/>
-                                    <constraint firstItem="QgW-su-Ued" firstAttribute="width" relation="greaterThanOrEqual" secondItem="piu-KT-LGb" secondAttribute="width" id="h6O-Sh-Mg0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gob-mi-gap" secondAttribute="trailing" id="iT7-Ib-xb9"/>
+                                    <constraint firstItem="Gob-mi-gap" firstAttribute="leading" secondItem="QgW-su-Ued" secondAttribute="leading" id="k92-Nu-bTE"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Ozp-Mm-1bS"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="piu-KT-LGb"/>
-                            </scrollView>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EUD-D8-60C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="OG4-Ia-5Ur"/>
-                            <constraint firstAttribute="trailing" secondItem="EUD-D8-60C" secondAttribute="trailing" constant="10" id="hAh-6f-mcP"/>
-                            <constraint firstItem="EUD-D8-60C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lAL-XH-5nI"/>
-                            <constraint firstItem="EUD-D8-60C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rvf-gE-GeF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgW-su-Ued" secondAttribute="trailing" constant="10" id="TUa-mm-P1v"/>
+                            <constraint firstItem="QgW-su-Ued" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YqU-Dt-qf0"/>
+                            <constraint firstItem="QgW-su-Ued" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="anZ-N4-LCa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="일기" image="smiley" catalog="system" selectedImage="smiley.fill" id="fo7-3U-TU2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="-618"/>
+            <point key="canvasLocation" x="873" y="-869"/>
         </scene>
-        <!--Mind1 Controller-->
+        <!--Mind Controller-->
         <scene sceneID="gEC-XF-3DD">
             <objects>
-                <viewController id="5yb-K2-335" customClass="Mind1Controller" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5yb-K2-335" customClass="MindController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rte-hd-7jv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fzE-KG-vmW" userLabel="Stack View1">
-                                <rect key="frame" x="10" y="100" width="279.33333333333331" height="540"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fzE-KG-vmW" userLabel="Stack View1">
+                                <rect key="frame" x="10" y="100" width="373" height="512"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqc-Bs-FeT">
-                                        <rect key="frame" x="0.0" y="0.0" width="279.33333333333331" height="40"/>
+                                        <rect key="frame" x="47" y="0.0" width="279.33333333333331" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="cV2-Ny-iuB"/>
                                         </constraints>
@@ -241,13 +201,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hV8-X8-HaQ" userLabel="Stack View2">
-                                        <rect key="frame" x="0.0" y="90" width="279.33333333333331" height="330"/>
+                                        <rect key="frame" x="21.666666666666657" y="90" width="330" height="330"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="59h-Oq-jVK" userLabel="Stack View3-1">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="330"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="330"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYl-q8-Rfs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="TCI-cU-Ipx"/>
                                                         </constraints>
@@ -262,7 +222,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTx-Rt-IDr">
-                                                        <rect key="frame" x="0.0" y="90" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="90" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="gqJ-jn-nia"/>
                                                         </constraints>
@@ -277,7 +237,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2G-K3-kI9">
-                                                        <rect key="frame" x="0.0" y="180" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="180" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="sGo-WY-Ndp"/>
                                                         </constraints>
@@ -292,7 +252,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGk-2u-1ZK">
-                                                        <rect key="frame" x="0.0" y="270" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="270" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="UwX-YD-2yj"/>
                                                         </constraints>
@@ -312,10 +272,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bYA-HI-sad" userLabel="Stack View3-2">
-                                                <rect key="frame" x="154.66666666666666" y="0.0" width="124.66666666666666" height="330"/>
+                                                <rect key="frame" x="180" y="0.0" width="150" height="330"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVm-Vl-2UI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="LkY-z1-o4e"/>
                                                         </constraints>
@@ -330,7 +290,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-al-1do">
-                                                        <rect key="frame" x="0.0" y="90" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="90" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="sUp-JD-21M"/>
                                                         </constraints>
@@ -345,7 +305,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-4Y-d6U">
-                                                        <rect key="frame" x="0.0" y="180" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="180" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="O3p-Yf-myP"/>
                                                         </constraints>
@@ -360,7 +320,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-nk-JNP">
-                                                        <rect key="frame" x="0.0" y="270" width="124.66666666666667" height="60"/>
+                                                        <rect key="frame" x="0.0" y="270" width="150" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="jMg-Kn-2et"/>
                                                         </constraints>
@@ -382,13 +342,10 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx7-Zx-dub">
-                                        <rect key="frame" x="0.0" y="470" width="279.33333333333331" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="oGb-TL-NcU"/>
-                                        </constraints>
+                                        <rect key="frame" x="144" y="470" width="85.333333333333314" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="다음으로">
-                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="36"/>
+                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
@@ -402,9 +359,9 @@
                         <viewLayoutGuide key="safeArea" id="Pnu-Wv-Qkv"/>
                         <color key="backgroundColor" red="1" green="0.89411764705882346" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Pnu-Wv-Qkv" firstAttribute="trailing" secondItem="fzE-KG-vmW" secondAttribute="trailing" constant="10" id="CET-vh-mhW"/>
-                            <constraint firstItem="fzE-KG-vmW" firstAttribute="top" secondItem="Pnu-Wv-Qkv" secondAttribute="top" constant="100" id="FZD-wh-TnC"/>
-                            <constraint firstItem="fzE-KG-vmW" firstAttribute="leading" secondItem="Pnu-Wv-Qkv" secondAttribute="leading" constant="10" id="sjx-wh-QbB"/>
+                            <constraint firstItem="Pnu-Wv-Qkv" firstAttribute="trailing" secondItem="fzE-KG-vmW" secondAttribute="trailing" constant="10" id="OQq-uI-hdR"/>
+                            <constraint firstItem="fzE-KG-vmW" firstAttribute="top" secondItem="Pnu-Wv-Qkv" secondAttribute="top" constant="100" id="oo3-Bi-1Mu"/>
+                            <constraint firstItem="fzE-KG-vmW" firstAttribute="leading" secondItem="Pnu-Wv-Qkv" secondAttribute="leading" constant="10" id="rQN-W7-Kls"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2lK-IJ-yXF"/>
@@ -422,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN3-h5-y6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753" y="-618"/>
+            <point key="canvasLocation" x="1752" y="-869"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UAh-Kg-ie5">
@@ -432,11 +389,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jF2-QQ-l9O">
-                                <rect key="frame" x="10" y="100" width="373" height="600"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="jF2-QQ-l9O">
+                                <rect key="frame" x="10" y="100" width="373" height="282"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 내 생각을 적어보아요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxe-vp-jH6">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                        <rect key="frame" x="34.333333333333343" y="0.0" width="304.33333333333326" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SKy-Tl-Afx"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="rHW-ch-2ua"/>
@@ -446,14 +403,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="mind" text="지금 내 생각은..." translatesAutoresizingMaskIntoConstraints="NO" id="7Ck-R8-96j">
-                                        <rect key="frame" x="0.0" y="70" width="373" height="458"/>
+                                        <rect key="frame" x="0.0" y="90" width="373" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Zrc-zu-8cU"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-tl-W4H">
-                                        <rect key="frame" x="0.0" y="558" width="373" height="42"/>
+                                        <rect key="frame" x="138" y="240" width="97" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="저장하기">
                                             <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
@@ -461,12 +421,13 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="jsQ-Lt-8lh" kind="unwind" unwindAction="unwindToRoot:" id="dUb-Lo-NRj"/>
+                                            <segue destination="jsQ-Lt-8lh" kind="unwind" unwindAction="unwindToDiary:" id="um4-vT-7JV"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="2tl-Xz-Jmy"/>
+                                    <constraint firstItem="7Ck-R8-96j" firstAttribute="leading" secondItem="jF2-QQ-l9O" secondAttribute="leading" id="Rhy-Xp-vvj"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Ck-R8-96j" secondAttribute="trailing" id="YDW-H8-98X"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -483,7 +444,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNM-7G-ftL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jsQ-Lt-8lh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2650" y="-618"/>
+            <point key="canvasLocation" x="2650" y="-869"/>
         </scene>
         <!--설정-->
         <scene sceneID="ag2-pI-7gK">
@@ -499,39 +460,568 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDp-ND-9Zf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="748"/>
+            <point key="canvasLocation" x="-1572" y="843"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RLu-EL-qgY">
+            <objects>
+                <viewController id="N30-gs-U10" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3y-A0-FhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-lk-2eS">
+                                <rect key="frame" x="10" y="200" width="373" height="372"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이날에 나의 마음은요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-yh-Grp">
+                                        <rect key="frame" x="65.333333333333329" y="0.0" width="242.33333333333337" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="oVA-wW-O7W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="36"/>
+                                        <color key="textColor" red="1" green="0.5616346539" blue="0.64759841439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음날씨 :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lss-3G-SAK">
+                                        <rect key="frame" x="146.33333333333334" y="70" width="80.666666666666657" height="28"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdR-Xh-u27">
+                                        <rect key="frame" x="61.666666666666686" y="128" width="250" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="O4I-u2-tan"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기록한 생각 :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYG-33-Vbm">
+                                        <rect key="frame" x="135.33333333333334" y="200" width="102.66666666666666" height="28"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhx-Lp-M4Q">
+                                        <rect key="frame" x="61.666666666666686" y="258" width="250" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="eiY-xK-dvu"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="--">
+                                                <attributes>
+                                                    <font key="NSFont" size="36" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja1-HK-Wxb">
+                                        <rect key="frame" x="156.33333333333334" y="330" width="60.666666666666657" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="닫기">
+                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="sLm-uI-fsj" kind="unwind" unwindAction="unwindToRecord:" id="4hh-Zy-yq9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="npp-aH-PeK"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="npp-aH-PeK" firstAttribute="trailing" secondItem="Fbq-lk-2eS" secondAttribute="trailing" constant="10" id="WFf-2J-alM"/>
+                            <constraint firstItem="Fbq-lk-2eS" firstAttribute="top" secondItem="npp-aH-PeK" secondAttribute="top" constant="200" id="adZ-aa-Crf"/>
+                            <constraint firstItem="Fbq-lk-2eS" firstAttribute="leading" secondItem="npp-aH-PeK" secondAttribute="leading" constant="10" id="tNx-wc-vOL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="99C-78-HBj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJM-xQ-CsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sLm-uI-fsj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-990" y="1658"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nhw-tM-VkS">
+            <objects>
+                <viewController id="Bkj-LD-wA5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kEq-wS-DBe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Dq1-Pw-GIG">
+                                <rect key="frame" x="10" y="200" width="373" height="471"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이날에 감사했던점은요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb8-Wu-XV8">
+                                        <rect key="frame" x="51.666666666666657" y="0.0" width="269.66666666666674" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hqg-xY-nDA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="36"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="감사한 일 3가지 :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ast-mT-D9G">
+                                        <rect key="frame" x="115.66666666666667" y="70" width="141.66666666666663" height="28"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iph-zg-G29">
+                                        <rect key="frame" x="61.666666666666686" y="128" width="250" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="M2P-uP-YaT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqT-5j-afo">
+                                        <rect key="frame" x="61.666666666666686" y="185" width="250" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="l0w-w7-UBb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uT-Uq-bei">
+                                        <rect key="frame" x="61.666666666666686" y="242" width="250" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="okH-pk-em0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나에게 감사한 일 :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5D-Xp-Gsg">
+                                        <rect key="frame" x="110.66666666666667" y="299" width="151.66666666666663" height="28"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-rJ-YBk">
+                                        <rect key="frame" x="61.666666666666686" y="357" width="250" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="4ep-Vc-WYO"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="--">
+                                                <attributes>
+                                                    <font key="NSFont" size="36" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHd-2u-JjY">
+                                        <rect key="frame" x="156.33333333333334" y="429" width="60.666666666666657" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="닫기">
+                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Gtv-aY-Yd0" kind="unwind" unwindAction="unwindToRecord:" id="hIE-8f-VCB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tTU-5i-tef"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dq1-Pw-GIG" firstAttribute="leading" secondItem="tTU-5i-tef" secondAttribute="leading" constant="10" id="5y6-4E-2UR"/>
+                            <constraint firstItem="tTU-5i-tef" firstAttribute="trailing" secondItem="Dq1-Pw-GIG" secondAttribute="trailing" constant="10" id="nDG-cT-UvW"/>
+                            <constraint firstItem="Dq1-Pw-GIG" firstAttribute="top" secondItem="tTU-5i-tef" secondAttribute="top" constant="200" id="ww5-b9-3ay"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IWu-B6-xDJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyv-BY-L2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Gtv-aY-Yd0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-173" y="1658"/>
+        </scene>
+        <!--Moment Cell Controller-->
+        <scene sceneID="p2l-af-a3d">
+            <objects>
+                <viewController id="5XQ-Uc-6s4" customClass="MomentCellController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tQR-11-aLu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wuo-FO-AhM">
+                                <rect key="frame" x="10" y="200" width="373" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이날의 모먼트들" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-fo-eH5">
+                                        <rect key="frame" x="99.333333333333329" y="0.0" width="174.66666666666669" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="au7-au-aAr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="36"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q2y-a4-F9U">
+                                        <rect key="frame" x="10" y="70" width="353" height="358"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" textLabel="my3-hM-ofd" style="IBUITableViewCellStyleDefault" id="hAS-10-9zb">
+                                                <rect key="frame" x="0.0" y="50" width="353" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAS-10-9zb" id="qDu-PP-VEg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="my3-hM-ofd">
+                                                            <rect key="frame" x="20" y="0.0" width="313" height="43.666667938232422"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-Z4-Isu">
+                                        <rect key="frame" x="156.33333333333334" y="458" width="60.666666666666657" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="닫기">
+                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="X5P-bM-hgY" kind="unwind" unwindAction="unwindToRecord:" id="awy-hJ-bBk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="q2y-a4-F9U" secondAttribute="trailing" constant="10" id="Kde-Cr-rgp"/>
+                                    <constraint firstAttribute="height" constant="500" id="mMN-le-X8f"/>
+                                    <constraint firstItem="q2y-a4-F9U" firstAttribute="leading" secondItem="Wuo-FO-AhM" secondAttribute="leading" constant="10" id="xWS-hx-MUA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BRi-uQ-lS3"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wuo-FO-AhM" firstAttribute="leading" secondItem="BRi-uQ-lS3" secondAttribute="leading" constant="10" id="21C-IN-kcb"/>
+                            <constraint firstItem="Wuo-FO-AhM" firstAttribute="top" secondItem="BRi-uQ-lS3" secondAttribute="top" constant="200" id="2uN-zV-8kv"/>
+                            <constraint firstItem="BRi-uQ-lS3" firstAttribute="trailing" secondItem="Wuo-FO-AhM" secondAttribute="trailing" constant="10" id="O4B-nx-IWf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uSs-Mp-NQP"/>
+                    <connections>
+                        <outlet property="tableView" destination="q2y-a4-F9U" id="BLp-6V-QsF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEj-Eb-a2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="X5P-bM-hgY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="629.7709923664122" y="1657.7464788732395"/>
         </scene>
         <!--기록-->
         <scene sceneID="hOw-D9-Whq">
             <objects>
-                <viewController id="d9Y-cH-3Oo" sceneMemberID="viewController">
+                <viewController id="d9Y-cH-3Oo" customClass="RecordController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U3m-jp-048">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-LZ-xaf">
+                                <rect key="frame" x="10" y="109" width="373" height="639.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기억을 더듬어 볼까요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epg-n8-cOk">
+                                        <rect key="frame" x="47.333333333333343" y="0.0" width="278.33333333333326" height="48"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="41"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-1g-lM0">
+                                        <rect key="frame" x="110.66666666666669" y="78" width="152" height="25.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="날짜를">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="선택해주세요">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="!">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-GE-0dt">
+                                        <rect key="frame" x="0.0" y="133.66666666666663" width="373" height="370"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="370" id="oEO-L9-vad"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAr-sG-UJO">
+                                        <rect key="frame" x="104.66666666666669" y="533.66666666666663" width="164" height="25.666666666666629"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="어떤 ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="24" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="기록을">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" size="24" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="보시겠어요?">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="22" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bil-jt-khM">
+                                        <rect key="frame" x="25.666666666666657" y="589.33333333333337" width="322" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-bC-5iO">
+                                                <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="TQz-nE-J8X"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="마음 일기">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.75294117650000003" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="N30-gs-U10" kind="show" id="rgj-Bc-idW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDu-y9-oxP">
+                                                <rect key="frame" x="110.66666666666669" y="0.0" width="100.66666666666669" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="4vX-Iq-uCE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="감사 일기">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.80784313730000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Bkj-LD-wA5" kind="show" id="0Zw-Qy-ouW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEl-ly-yxR">
+                                                <rect key="frame" x="221.33333333333334" y="0.0" width="100.66666666666666" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="PIX-iz-mhS"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="모먼트">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseBackgroundColor" red="0.75071747448979587" green="0.87832164115646261" blue="0.70107886904761907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="5XQ-Uc-6s4" kind="show" id="3wE-sC-X2J"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bDM-GE-0dt" firstAttribute="leading" secondItem="jVq-LZ-xaf" secondAttribute="leading" id="O31-AS-6GT"/>
+                                    <constraint firstAttribute="trailing" secondItem="bDM-GE-0dt" secondAttribute="trailing" id="zgI-eT-XFf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nnh-1K-KoY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jVq-LZ-xaf" firstAttribute="top" secondItem="nnh-1K-KoY" secondAttribute="top" constant="50" id="Lkh-7c-Sux"/>
+                            <constraint firstItem="jVq-LZ-xaf" firstAttribute="leading" secondItem="nnh-1K-KoY" secondAttribute="leading" constant="10" id="Tzi-vH-8Nj"/>
+                            <constraint firstItem="nnh-1K-KoY" firstAttribute="trailing" secondItem="jVq-LZ-xaf" secondAttribute="trailing" constant="10" id="cWv-2C-zyP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="기록" image="list.clipboard" catalog="system" selectedImage="list.bullet.clipboard.fill" id="yD6-tW-YWw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvj-0R-6AP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-171" y="748"/>
+            <point key="canvasLocation" x="-173" y="843"/>
         </scene>
         <!--모먼트-->
         <scene sceneID="1QX-Za-toY">
             <objects>
-                <viewController id="gTJ-4x-6zf" sceneMemberID="viewController">
+                <viewController id="gTJ-4x-6zf" customClass="MomentController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Sw-C8-3Cj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cpY-oY-9oM">
+                                <rect key="frame" x="10" y="159" width="373" height="527"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dst-Od-Ley">
+                                        <rect key="frame" x="19.333333333333343" y="0.0" width="334.66666666666663" height="35"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="기록하고">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="싶은">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="모먼트를">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="알려주세요">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" :)">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="30" name="KOTRAHOPE"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="Z6A-xK-FCa">
+                                        <rect key="frame" x="36.666666666666657" y="85" width="300" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="4Wy-3I-qv1"/>
+                                            <constraint firstAttribute="width" constant="300" id="Jbz-TZ-TzJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="음..." translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-oW-0gu">
+                                        <rect key="frame" x="0.0" y="335" width="373" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Fi5-BQ-OvO"/>
+                                        </constraints>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rww-S1-KiN">
+                                        <rect key="frame" x="138" y="485" width="97" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="저장하기">
+                                            <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="gTJ-4x-6zf" eventType="touchUpInside" id="H82-8H-mhS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Z6d-oW-0gu" secondAttribute="trailing" id="Ki5-Km-rpG"/>
+                                    <constraint firstItem="Z6d-oW-0gu" firstAttribute="leading" secondItem="cpY-oY-9oM" secondAttribute="leading" id="n9z-Z5-vNj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9bS-g6-HdG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cpY-oY-9oM" firstAttribute="leading" secondItem="9bS-g6-HdG" secondAttribute="leading" constant="10" id="gm3-kx-0Oa"/>
+                            <constraint firstItem="cpY-oY-9oM" firstAttribute="top" secondItem="9bS-g6-HdG" secondAttribute="top" constant="100" id="lhj-9P-YCR"/>
+                            <constraint firstItem="9bS-g6-HdG" firstAttribute="trailing" secondItem="cpY-oY-9oM" secondAttribute="trailing" constant="10" id="mrz-ML-O04"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="모먼트" image="checkmark.seal" catalog="system" selectedImage="checkmark.seal.fill" id="psa-kO-Utq"/>
+                    <connections>
+                        <outlet property="imageView" destination="Z6A-xK-FCa" id="nHe-nP-Tvi"/>
+                        <outlet property="textView" destination="Z6d-oW-0gu" id="Dbt-uw-2CS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMb-ha-BCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715" y="663"/>
+            <point key="canvasLocation" x="1215" y="843"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DDk-uM-IFX">
@@ -552,7 +1042,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJq-sq-Pob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="-173" y="-221"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rPa-Qf-hSM">
@@ -562,11 +1052,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-W3-eqP">
-                                <rect key="frame" x="10" y="100" width="373" height="392"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-W3-eqP">
+                                <rect key="frame" x="10" y="100" width="373" height="384"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 감사한일 3가지는 무엇인가요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-Ai-42f">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                        <rect key="frame" x="13" y="0.0" width="347.33333333333331" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="L1n-Jl-iWJ"/>
                                             <constraint firstAttribute="height" constant="40" id="jW1-DJ-bFh"/>
@@ -576,7 +1066,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QGA-le-hle">
-                                        <rect key="frame" x="0.0" y="90" width="373" height="34"/>
+                                        <rect key="frame" x="29" y="90" width="315.33333333333331" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="첫번째" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYW-Tz-UCP">
                                                 <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="34"/>
@@ -585,12 +1075,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwm-ZZ-0Xm">
-                                                <rect key="frame" x="65.333333333333343" y="0.0" width="307.66666666666663" height="34"/>
+                                                <rect key="frame" x="65.333333333333314" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="oj7-fM-svy"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="먼저">
                                                         <attributes>
                                                             <font key="NSFont" size="18" name="KOTRAHOPE"/>
-                                                            <font key="NSOriginalFont" metaFont="system" size="12"/>
+                                                            <font key="NSOriginalFont" metaFont="cellTitle"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -606,7 +1099,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o8v-hJ-fkf">
-                                        <rect key="frame" x="0.0" y="174" width="373" height="34"/>
+                                        <rect key="frame" x="30.666666666666657" y="174" width="311.66666666666674" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두번째" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wr-3h-9a7">
                                                 <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="34"/>
@@ -615,15 +1108,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="다음으로.." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmq-YD-DNI">
-                                                <rect key="frame" x="61.666666666666657" y="0.0" width="311.33333333333337" height="34"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="61.666666666666657" y="0.0" width="249.99999999999997" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="MTO-4g-WE3"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r4t-UV-Rww">
-                                        <rect key="frame" x="0.0" y="258" width="373" height="34"/>
+                                        <rect key="frame" x="28" y="258" width="317" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세번째" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXS-3a-m48">
                                                 <rect key="frame" x="0.0" y="0.0" width="57" height="34"/>
@@ -632,7 +1127,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGy-7B-IMN">
-                                                <rect key="frame" x="67" y="0.0" width="306" height="34"/>
+                                                <rect key="frame" x="67" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="uND-C0-h1h"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="마지막으로">
                                                         <attributes>
@@ -653,10 +1151,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgm-Ls-FiD">
-                                        <rect key="frame" x="0.0" y="342" width="373" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rz6-5C-Zlj"/>
-                                        </constraints>
+                                        <rect key="frame" x="144" y="342" width="85.333333333333314" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="다음으로">
                                             <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
@@ -682,7 +1177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78a-HH-fpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="84"/>
+            <point key="canvasLocation" x="1752" y="0.0"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7aV-ti-7qe">
@@ -692,11 +1187,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-8N-Qxo">
-                                <rect key="frame" x="10" y="100" width="373" height="413"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="OAO-8N-Qxo">
+                                <rect key="frame" x="10" y="99.999999999999972" width="373" height="419.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 나에게 감사한 일은 무엇인가요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-8t-CTQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                        <rect key="frame" x="3" y="0.0" width="367" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="374-RR-3tm"/>
                                             <constraint firstAttribute="height" constant="40" id="WOU-iJ-CAt"/>
@@ -706,11 +1201,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-xK-U3u">
-                                        <rect key="frame" x="0.0" y="90" width="373" height="81"/>
+                                        <rect key="frame" x="147" y="90" width="79" height="87.333333333333314"/>
                                         <attributedString key="attributedText">
                                             <fragment content="🥰">
                                                 <attributes>
-                                                    <font key="NSFont" size="73" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSFont" metaFont="system" size="73"/>
                                                     <font key="NSOriginalFont" metaFont="system" size="17"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -719,7 +1214,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y21-up-4e7">
-                                        <rect key="frame" x="0.0" y="221" width="373" height="100"/>
+                                        <rect key="frame" x="0.0" y="227.33333333333331" width="373" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="oY3-Dt-26M"/>
@@ -742,7 +1237,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fl-H7-uCk">
-                                        <rect key="frame" x="0.0" y="371" width="373" height="42"/>
+                                        <rect key="frame" x="138" y="377.33333333333331" width="97" height="42"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="저장하기">
                                             <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
@@ -750,10 +1245,14 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="WlR-kH-Iwy" kind="unwind" unwindAction="unwindToRoot:" id="mf1-SA-q2r"/>
+                                            <segue destination="WlR-kH-Iwy" kind="unwind" unwindAction="unwindToDiary:" id="oR8-VO-Gfh"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="y21-up-4e7" firstAttribute="leading" secondItem="OAO-8N-Qxo" secondAttribute="leading" id="5zM-09-fl4"/>
+                                    <constraint firstAttribute="trailing" secondItem="y21-up-4e7" secondAttribute="trailing" id="nJO-Gh-OQU"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NYK-RI-VfU"/>
@@ -769,7 +1268,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4A1-AJ-i6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WlR-kH-Iwy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2650" y="84"/>
+            <point key="canvasLocation" x="2650" y="0.0"/>
         </scene>
     </scenes>
     <resources>
@@ -777,6 +1276,7 @@
         <image name="checkmark.seal.fill" catalog="system" width="128" height="124"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="info" width="135.33332824707031" height="77.333335876464844"/>
         <image name="list.bullet.clipboard.fill" catalog="system" width="98" height="128"/>
         <image name="list.clipboard" catalog="system" width="98" height="128"/>
         <image name="smiley" catalog="system" width="128" height="123"/>
@@ -789,6 +1289,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
