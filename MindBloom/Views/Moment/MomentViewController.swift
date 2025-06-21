@@ -49,11 +49,30 @@ class MomentViewController: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {
         
-        // 완료되면 UI를 초기 상태로 리셋
-        resetUI()
-        
-        // 실제 저장 로직
-    }
+        guard let image = imageView.image,
+                  let imageData = image.jpegData(compressionQuality: 0.8),
+                  let text = textView.text,
+                  !text.isEmpty else {
+                print("이미지 또는 텍스트 없음")
+                return
+            }
+
+            Task {
+                do {
+                    try await MomentUploader.uploadMoment(
+                        date: Date(),
+                        text: text,
+                        imageData: imageData
+                    )
+                    print("업로드 성공")
+                    
+                    // UI 초기화
+                    resetUI()
+                } catch {
+                    print("업로드 실패: \(error.localizedDescription)")
+                }
+            }
+        }
     
     private func resetUI() {
         

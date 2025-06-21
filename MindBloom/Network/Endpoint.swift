@@ -12,11 +12,14 @@ enum Endpoint {
 
     case createMindDiary
     case createGratitudeDiary
-
+    case createMoment
+    
     var path: String {
         switch self {
         case .createMindDiary: return "/mind/"
         case .createGratitudeDiary: return "/gratitude/"
+        case .createMoment: return "/moments/"
+            
         }
     }
 
