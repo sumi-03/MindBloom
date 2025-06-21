@@ -109,7 +109,7 @@
                                                     <color key="baseBackgroundColor" red="1" green="0.80784313730000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="u3i-rI-Iu0" kind="show" id="3X2-zU-Z5r"/>
+                                                    <segue destination="u3i-rI-Iu0" kind="show" identifier="gratitude1" id="3X2-zU-Z5r"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -130,15 +130,18 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="일기" image="smiley" catalog="system" selectedImage="smiley.fill" id="fo7-3U-TU2"/>
+                    <connections>
+                        <outlet property="datePicker" destination="Gob-mi-gap" id="INQ-BY-vG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1799.2366412213739" y="-869.0140845070423"/>
         </scene>
-        <!--Mind View Controller-->
+        <!--Mind Diary View Controller-->
         <scene sceneID="gEC-XF-3DD">
             <objects>
-                <viewController id="5yb-K2-335" customClass="MindViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5yb-K2-335" customClass="MindDiaryViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rte-hd-7jv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,7 +353,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="phc-pw-tPV" kind="show" id="Zqh-w3-iif"/>
+                                            <segue destination="phc-pw-tPV" kind="show" identifier="mind2" id="Zqh-w3-iif"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -381,10 +384,10 @@
             </objects>
             <point key="canvasLocation" x="2678.6259541984732" y="-869.0140845070423"/>
         </scene>
-        <!--View Controller-->
+        <!--Mind Diary Last View Controller-->
         <scene sceneID="UAh-Kg-ie5">
             <objects>
-                <viewController id="phc-pw-tPV" sceneMemberID="viewController">
+                <viewController id="phc-pw-tPV" customClass="MindDiaryLastViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tLn-Si-u7R">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,6 +424,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="saveButtonTapped:" destination="phc-pw-tPV" eventType="touchUpInside" id="2gy-eb-82p"/>
                                             <segue destination="jsQ-Lt-8lh" kind="unwind" unwindAction="unwindToDiary:" id="um4-vT-7JV"/>
                                         </connections>
                                     </button>
@@ -440,6 +444,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VfB-eb-Luu"/>
+                    <connections>
+                        <outlet property="saveButton" destination="hvQ-tl-W4H" id="oac-33-scn"/>
+                        <outlet property="thoughtTextView" destination="7Ck-R8-96j" id="KbF-lb-vTc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNM-7G-ftL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jsQ-Lt-8lh" userLabel="Exit" sceneMemberID="exit"/>
@@ -474,7 +482,7 @@
                                 <rect key="frame" x="10" y="200" width="373" height="372"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이날에 나의 마음은요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-yh-Grp">
-                                        <rect key="frame" x="65.333333333333329" y="0.0" width="242.33333333333337" height="40"/>
+                                        <rect key="frame" x="65.333333333333329" y="0.0" width="242.33333333333343" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="oVA-wW-O7W"/>
                                         </constraints>
@@ -1154,7 +1162,7 @@
                                 <rect key="frame" x="10" y="253" width="373" height="350"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인을 진행해주세요 :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMv-a9-Qas">
-                                        <rect key="frame" x="67.666666666666686" y="0.0" width="238" height="40"/>
+                                        <rect key="frame" x="67.666666666666686" y="0.0" width="238.00000000000006" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7YE-xn-Muy"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fiA-uU-Oqz"/>
@@ -1283,10 +1291,10 @@
             </objects>
             <point key="canvasLocation" x="-173" y="-248"/>
         </scene>
-        <!--View Controller-->
+        <!--Gratitude Diary View Controller-->
         <scene sceneID="rPa-Qf-hSM">
             <objects>
-                <viewController id="u3i-rI-Iu0" sceneMemberID="viewController">
+                <viewController id="u3i-rI-Iu0" customClass="GratitudeDiaryViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6nQ-5w-csT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1398,7 +1406,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="0jw-wx-L2h" kind="show" id="jXa-9d-ocg"/>
+                                            <segue destination="0jw-wx-L2h" kind="show" identifier="gratitude2" id="jXa-9d-ocg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1413,15 +1421,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zfs-CK-ZFq"/>
+                    <connections>
+                        <outlet property="textField1" destination="bwm-ZZ-0Xm" id="QEG-cN-nvn"/>
+                        <outlet property="textField2" destination="wmq-YD-DNI" id="MAd-Va-x6c"/>
+                        <outlet property="textField3" destination="NGy-7B-IMN" id="bEm-pt-DzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78a-HH-fpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2678.6259541984732" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Gratitude Diary Last View Controller-->
         <scene sceneID="7aV-ti-7qe">
             <objects>
-                <viewController id="0jw-wx-L2h" sceneMemberID="viewController">
+                <viewController id="0jw-wx-L2h" customClass="GratitudeDiaryLastViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iud-jc-9Pf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1484,6 +1497,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="saveButtonTapped:" destination="0jw-wx-L2h" eventType="touchUpInside" id="NSZ-l5-9QB"/>
                                             <segue destination="WlR-kH-Iwy" kind="unwind" unwindAction="unwindToDiary:" id="oR8-VO-Gfh"/>
                                         </connections>
                                     </button>
@@ -1503,6 +1517,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e0t-XX-Cie"/>
+                    <connections>
+                        <outlet property="gratitudeToMeTextView" destination="y21-up-4e7" id="D6B-3u-MZR"/>
+                        <outlet property="saveButton" destination="0fl-H7-uCk" id="A8y-XE-SJB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4A1-AJ-i6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WlR-kH-Iwy" userLabel="Exit" sceneMemberID="exit"/>

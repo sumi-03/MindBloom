@@ -7,6 +7,10 @@
 		<string>KOTRAHOPE.otf</string>
 		<string>KOTRAHOPE.ttf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict/>
+	<key> NSAllowsArbitraryLoads</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

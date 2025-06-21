@@ -8,7 +8,7 @@
 import UIKit
 
 class MomentDetailViewController: UIViewController {
-    // 스토리보드에서 연결된 아울렛
+    
     @IBOutlet weak var tableView: UITableView!
     
     // 테이블에 표시할 데이터 배열
@@ -33,6 +33,7 @@ extension MomentDetailViewController: UITableViewDataSource {
     
     // 각 행에 표시할 셀 구성
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         // 스토리보드에서 지정한 식별자로 재사용 셀 가져오기
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
         

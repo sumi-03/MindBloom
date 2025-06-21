@@ -71,6 +71,7 @@ class MomentViewController: UIViewController {
 }
 
 extension MomentViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     // 사진 선택 완료
     func imagePickerController(_ picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
