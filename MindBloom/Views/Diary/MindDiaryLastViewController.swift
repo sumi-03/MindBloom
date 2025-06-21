@@ -18,7 +18,8 @@ final class MindDiaryLastViewController: UIViewController {
     var selectedMood: String!
 
     private let viewModel = MindDiaryViewModel()
-
+    private var cancellables = Set<AnyCancellable>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +36,4 @@ final class MindDiaryLastViewController: UIViewController {
             thought: thoughtTextView.text ?? ""
         )
     }
-
-    private var cancellables = Set<AnyCancellable>()
 }

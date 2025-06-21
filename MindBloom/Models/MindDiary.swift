@@ -14,12 +14,23 @@ struct MindDiaryRequest: Codable {
     let content: String
 }
 
-// 서버에서 받을 응답 예시
+// 서버에서 받을 응답 - CodingKeys로 일관성 유지
 struct MindDiaryResponse: Codable {
     let id: Int
+    let userId: String
     let date: String
     let mood: String
     let content: String
-    let created_At: String
-    let updated_at: String
+    let createdAt: String
+    let updatedAt: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case userId = "user_id"
+        case date
+        case mood
+        case content
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+    }
 }

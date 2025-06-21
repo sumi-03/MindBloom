@@ -12,7 +12,7 @@ final class APIService {
     static let shared = APIService()
     private init() {}
 
-    private func request(
+    func request(
         endpoint: Endpoint,
         method: String = "GET",
         body: Data? = nil
@@ -31,9 +31,68 @@ final class APIService {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = body
 
-        return try await URLSession.shared.data(for: request)
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        // HTTP 상태 코드 검증
+        if let httpResponse = response as? HTTPURLResponse {
+            guard 200...299 ~= httpResponse.statusCode else {
+                throw URLError(.badServerResponse)
+            }
+        }
+        
+        #if DEBUG
+        if let http = response as? HTTPURLResponse {
+            print("🧾 \(method) status: \(http.statusCode)")
+        }
+        print("📥 \(method) response: \(String(data: data, encoding: .utf8) ?? "empty")")
+        #endif
+        
+        return (data, response)
+    }
+    
+    // DELETE 전용 메서드 추가
+    func requestDelete(endpoint: Endpoint) async throws {
+        let _ = try await request(endpoint: endpoint, method: "DELETE")
     }
 
+    func requestJSON<Res: Decodable>(
+        endpoint: Endpoint,
+        method: String = "GET"
+    ) async throws -> Res {
+
+        // Firebase 인증 토큰
+        guard let user = Auth.auth().currentUser else {
+            throw URLError(.userAuthenticationRequired)
+        }
+        let token = try await user.getIDToken()
+
+        var request = URLRequest(url: endpoint.url)
+        request.httpMethod = method
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+
+        let (data, response) = try await URLSession.shared.data(for: request)
+
+        // HTTP 상태 코드 검증
+        if let httpResponse = response as? HTTPURLResponse {
+            guard 200...299 ~= httpResponse.statusCode else {
+                throw URLError(.badServerResponse)
+            }
+        }
+        
+        #if DEBUG
+        if let http = response as? HTTPURLResponse {
+            print("🧾 status: \(http.statusCode)")
+        }
+        print("📥 \(String(data: data, encoding: .utf8) ?? "")")
+        #endif
+
+        // 날짜 디코딩 전략 추가
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        return try decoder.decode(Res.self, from: data)
+    }
+    
     func requestJSON<Req: Encodable, Res: Decodable>(
         endpoint: Endpoint,
         method: String = "POST",
@@ -51,6 +110,10 @@ final class APIService {
             body: jsonData
         )
         
-        return try JSONDecoder().decode(Res.self, from: data)
+        // 날짜 디코딩
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        return try decoder.decode(Res.self, from: data)
     }
 }

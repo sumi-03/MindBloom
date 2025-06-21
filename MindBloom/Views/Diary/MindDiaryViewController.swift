@@ -34,8 +34,6 @@ class MindDiaryViewController: UIViewController {
         }
     }
     
-    
-    
     @IBAction func weatherOptionTapped(_ sender: UIButton) {
         // 다른 버튼은 모두 선택 해제
         for btn in weatherButtons {
