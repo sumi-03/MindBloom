@@ -1,5 +1,5 @@
 //
-//  MomentCellController.swift
+//  MomentDetailViewController.swift
 //  MindBloom
 //
 //  Created by 임수미 on 6/19/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MomentCellController: UIViewController {
+class MomentDetailViewController: UIViewController {
     // 스토리보드에서 연결된 아울렛
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,7 +24,7 @@ class MomentCellController: UIViewController {
 }
 
 
-extension MomentCellController: UITableViewDataSource {
+extension MomentDetailViewController: UITableViewDataSource {
     
     // 행(셀) 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

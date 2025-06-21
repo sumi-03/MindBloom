@@ -1,5 +1,5 @@
 //
-//  DiaryController.swift
+//  DiaryViewController.swift
 //  MindBloom
 //
 //  Created by 임수미 on 6/4/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DiaryController: UIViewController {
+class DiaryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

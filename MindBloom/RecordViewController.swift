@@ -1,5 +1,5 @@
 //
-//  RecordController.swift
+//  RecordViewController.swift
 //  MindBloom
 //
 //  Created by 임수미 on 6/20/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecordController: UIViewController {
+class RecordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

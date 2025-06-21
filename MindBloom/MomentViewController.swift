@@ -1,5 +1,5 @@
 //
-//  MomentController.swift
+//  MomentViewController.swift
 //  MindBloom
 //
 //  Created by 임수미 on 6/19/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MomentController: UIViewController {
+class MomentViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
@@ -70,7 +70,7 @@ class MomentController: UIViewController {
     
 }
 
-extension MomentController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension MomentViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // 사진 선택 완료
     func imagePickerController(_ picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]

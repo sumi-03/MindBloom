@@ -1,5 +1,5 @@
 //
-//  MindController.swift
+//  MindViewController.swift
 //  MindBloom
 //
 //  Created by 임수미 on 6/4/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MindController: UIViewController {
+class MindViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()      

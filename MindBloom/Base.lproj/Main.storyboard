@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ghW-vd-Knw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hdc-af-IGi">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -16,7 +16,7 @@
         <!--일기-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DiaryController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DiaryViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,12 +133,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="-869"/>
+            <point key="canvasLocation" x="1799.2366412213739" y="-869.0140845070423"/>
         </scene>
-        <!--Mind Controller-->
+        <!--Mind View Controller-->
         <scene sceneID="gEC-XF-3DD">
             <objects>
-                <viewController id="5yb-K2-335" customClass="MindController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5yb-K2-335" customClass="MindViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rte-hd-7jv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN3-h5-y6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-869"/>
+            <point key="canvasLocation" x="2678.6259541984732" y="-869.0140845070423"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UAh-Kg-ie5">
@@ -444,7 +444,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNM-7G-ftL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jsQ-Lt-8lh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2650" y="-869"/>
+            <point key="canvasLocation" x="3576.3358778625952" y="-869.0140845070423"/>
         </scene>
         <!--설정-->
         <scene sceneID="ag2-pI-7gK">
@@ -460,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDp-ND-9Zf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1572" y="843"/>
+            <point key="canvasLocation" x="1199" y="843"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RLu-EL-qgY">
@@ -652,10 +652,10 @@
             </objects>
             <point key="canvasLocation" x="-173" y="1658"/>
         </scene>
-        <!--Moment Cell Controller-->
+        <!--Moment Detail View Controller-->
         <scene sceneID="p2l-af-a3d">
             <objects>
-                <viewController id="5XQ-Uc-6s4" customClass="MomentCellController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5XQ-Uc-6s4" customClass="MomentDetailViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQR-11-aLu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -736,7 +736,7 @@
         <!--기록-->
         <scene sceneID="hOw-D9-Whq">
             <objects>
-                <viewController id="d9Y-cH-3Oo" customClass="RecordController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d9Y-cH-3Oo" customClass="RecordViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U3m-jp-048">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -895,7 +895,7 @@
         <!--모먼트-->
         <scene sceneID="1QX-Za-toY">
             <objects>
-                <viewController id="gTJ-4x-6zf" customClass="MomentController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gTJ-4x-6zf" customClass="MomentViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Sw-C8-3Cj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1021,13 +1021,252 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMb-ha-BCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="843"/>
+            <point key="canvasLocation" x="-1589" y="843"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="MYP-Ec-cfW">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Cw6-bm-xGk" customClass="SignUpViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eis-ML-dY0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vwq-KT-EbQ">
+                                <rect key="frame" x="10" y="150" width="373" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입을 진행해주세요 :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-qZ-lMN">
+                                        <rect key="frame" x="51.666666666666657" y="0.0" width="269.66666666666674" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hLK-Tq-zRA"/>
+                                            <constraint firstAttribute="height" constant="40" id="pyz-Io-to9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="31"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O4Z-kg-lFs">
+                                        <rect key="frame" x="30" y="80" width="313" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMe-4O-45d">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="34"/>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                <color key="textColor" red="1" green="0.5616346539" blue="0.64759841439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGk-96-Lja">
+                                                <rect key="frame" x="63" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="sDW-f6-8hh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-wp-IET">
+                                        <rect key="frame" x="24" y="154" width="325" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ8-gb-lXx">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="34"/>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-CV-Vdi">
+                                                <rect key="frame" x="75" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="4Jf-3T-F8O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Su-6u-Cu9">
+                                        <rect key="frame" x="35.666666666666657" y="228" width="302" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPx-2I-JFs">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="42"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="회원가입">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUpButtonTapped:" destination="Cw6-bm-xGk" eventType="touchUpInside" id="ihc-Rl-Zq2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxy-kg-txk">
+                                                <rect key="frame" x="156" y="0.0" width="146" height="42"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="로그인 하러가기">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backToLoginButtonTapped:" destination="Cw6-bm-xGk" eventType="touchUpInside" id="L2w-T1-8ln"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je7-70-bqX">
+                                        <rect key="frame" x="82" y="310" width="209" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Jwl-Dz-6oO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MNO-1S-Y8W"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MNO-1S-Y8W" firstAttribute="trailing" secondItem="vwq-KT-EbQ" secondAttribute="trailing" constant="10" id="JVO-VM-AB1"/>
+                            <constraint firstItem="vwq-KT-EbQ" firstAttribute="top" secondItem="MNO-1S-Y8W" secondAttribute="top" constant="150" id="Tcy-dF-2SR"/>
+                            <constraint firstItem="vwq-KT-EbQ" firstAttribute="leading" secondItem="MNO-1S-Y8W" secondAttribute="leading" constant="10" id="ume-ML-Vz4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bro-LS-6bI"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="NGk-96-Lja" id="y8K-nu-upk"/>
+                        <outlet property="messageLabel" destination="Je7-70-bqX" id="9nr-Zo-jOn"/>
+                        <outlet property="passwordTextField" destination="Ve5-CV-Vdi" id="7qh-YC-S1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDp-Gj-pRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2037" y="-249"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="qA8-uf-kjv">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Lo2-cx-mqG" customClass="LoginViewController" customModule="MindBloom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMb-Zh-25D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-S9-2UH">
+                                <rect key="frame" x="10" y="253" width="373" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인을 진행해주세요 :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMv-a9-Qas">
+                                        <rect key="frame" x="67.666666666666686" y="0.0" width="238" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7YE-xn-Muy"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fiA-uU-Oqz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="31"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LZz-Nz-wmT">
+                                        <rect key="frame" x="30" y="80" width="313" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-Ti-LxP">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="34"/>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                <color key="textColor" red="1" green="0.5616346539" blue="0.64759841439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aps-Nw-xKG">
+                                                <rect key="frame" x="63" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="suz-jB-idi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ahq-Q8-mf8">
+                                        <rect key="frame" x="24" y="154" width="325" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ll-Cv-IXn">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="34"/>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="onU-Uk-mlf">
+                                                <rect key="frame" x="75" y="0.0" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="jVN-LD-q9z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-vf-bYH">
+                                        <rect key="frame" x="51.666666666666657" y="228" width="270" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpB-R0-47R">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="로그인">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="Lo2-cx-mqG" eventType="touchUpInside" id="gli-B5-TJW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71s-j4-r5D">
+                                                <rect key="frame" x="140" y="0.0" width="130" height="42"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="계정이 없어요">
+                                                    <fontDescription key="titleFontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Cw6-bm-xGk" kind="presentation" id="598-8J-zfp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOk-q8-c5T">
+                                        <rect key="frame" x="109.33333333333333" y="310" width="154.33333333333337" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jY9-f4-chz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KOTRAHOPE" family="KOTRA HOPE" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RY6-RF-Mzk"/>
+                        <color key="backgroundColor" red="1" green="0.89411764709999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XcR-S9-2UH" firstAttribute="top" secondItem="RY6-RF-Mzk" secondAttribute="top" constant="150" id="QZb-sQ-EQg"/>
+                            <constraint firstItem="RY6-RF-Mzk" firstAttribute="trailing" secondItem="XcR-S9-2UH" secondAttribute="trailing" constant="10" id="Wd9-qO-B1W"/>
+                            <constraint firstItem="XcR-S9-2UH" firstAttribute="leading" secondItem="RY6-RF-Mzk" secondAttribute="leading" constant="10" id="zdn-pp-Lcx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yuc-w2-GsY"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Aps-Nw-xKG" id="uih-CJ-W8p"/>
+                        <outlet property="messageLabel" destination="yOk-q8-c5T" id="eEb-Hv-kfa"/>
+                        <outlet property="passwordTextField" destination="onU-Uk-mlf" id="ZoZ-oe-pxb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvm-uw-tbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3146" y="-249"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DDk-uM-IFX">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ghW-vd-Knw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="ghW-vd-Knw" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ei7-x2-f8r"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jml-Gm-OxK">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1042,7 +1281,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJq-sq-Pob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-173" y="-221"/>
+            <point key="canvasLocation" x="-173" y="-248"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rPa-Qf-hSM">
@@ -1177,7 +1416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78a-HH-fpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="0.0"/>
+            <point key="canvasLocation" x="2678.6259541984732" y="0.0"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7aV-ti-7qe">
@@ -1268,7 +1507,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4A1-AJ-i6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WlR-kH-Iwy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2650" y="0.0"/>
+            <point key="canvasLocation" x="3576.3358778625952" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LNz-Gb-WHg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hdc-af-IGi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="leT-K3-ThR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lo2-cx-mqG" kind="relationship" relationship="rootViewController" id="hsg-28-U3J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zb-Ft-YNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4312" y="-249"/>
         </scene>
     </scenes>
     <resources>
@@ -1295,6 +1552,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

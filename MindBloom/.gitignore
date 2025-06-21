@@ -1,0 +1,29 @@
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# Cocoapods
+Pods/
+Podfile.lock
+
+# Firebase
+GoogleService-Info.plist
+
+# Environment / Secrets
+*.env
+*.secret
+*.xcconfig
+
+# Personal configs
+*.DS_Store
+.idea/
+*.swp
+*.xcuserstate

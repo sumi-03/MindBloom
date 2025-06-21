@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A49343482E0199B100CDD9A4 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = A49343472E0199B100CDD9A4 /* FSCalendar */; };
+		A4D8B9182E065F1900454480 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A4D8B9172E065F1900454480 /* FirebaseAuth */; };
+		A4D8B91A2E065F9800454480 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A4D8B9192E065F9800454480 /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,17 +19,29 @@
 		A41CA8B22DEFE5E300559592 /* Exceptions for "MindBloom" folder in "MindBloom" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				.gitignore,
 				Info.plist,
 			);
 			target = A41CA89F2DEFE5E100559592 /* MindBloom */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A4D8B9252E06797B00454480 /* Exceptions for "MindBloom" folder in "Compile Sources" phase from "MindBloom" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A41CA89C2DEFE5E100559592 /* Sources */;
+			membershipExceptions = (
+				.gitignore,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A41CA8A22DEFE5E100559592 /* MindBloom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				A41CA8B22DEFE5E300559592 /* Exceptions for "MindBloom" folder in "MindBloom" target */,
+				A4D8B9252E06797B00454480 /* Exceptions for "MindBloom" folder in "Compile Sources" phase from "MindBloom" target */,
 			);
 			path = MindBloom;
 			sourceTree = "<group>";
@@ -40,7 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49343482E0199B100CDD9A4 /* FSCalendar in Frameworks */,
+				A4D8B91A2E065F9800454480 /* FirebaseCore in Frameworks */,
+				A4D8B9182E065F1900454480 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +97,8 @@
 			);
 			name = MindBloom;
 			packageProductDependencies = (
-				A49343472E0199B100CDD9A4 /* FSCalendar */,
+				A4D8B9172E065F1900454480 /* FirebaseAuth */,
+				A4D8B9192E065F9800454480 /* FirebaseCore */,
 			);
 			productName = MindBloom;
 			productReference = A41CA8A02DEFE5E100559592 /* MindBloom.app */;
@@ -114,7 +129,7 @@
 			mainGroup = A41CA8972DEFE5E100559592;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				A49343462E0199B100CDD9A4 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				A4D8B9162E065F1900454480 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A41CA8A12DEFE5E100559592 /* Products */;
@@ -344,21 +359,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A49343462E0199B100CDD9A4 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+		A4D8B9162E065F1900454480 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.8.4;
+				minimumVersion = 11.14.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A49343472E0199B100CDD9A4 /* FSCalendar */ = {
+		A4D8B9172E065F1900454480 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A49343462E0199B100CDD9A4 /* XCRemoteSwiftPackageReference "FSCalendar" */;
-			productName = FSCalendar;
+			package = A4D8B9162E065F1900454480 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A4D8B9192E065F9800454480 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D8B9162E065F1900454480 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

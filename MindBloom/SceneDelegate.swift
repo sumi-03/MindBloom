@@ -18,6 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    func changeRootToMain() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = sb.instantiateViewController(withIdentifier: "MainTabBarViewController")
+        window?.rootViewController = mainVC
+        window?.makeKeyAndVisible()
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
